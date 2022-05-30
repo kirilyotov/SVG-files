@@ -10,11 +10,6 @@ std::ostream& operator<<(std::ostream& out, const StraightLine& line)
 	return out;
 }
 
-std::ifstream& operator>>(std::ifstream& in, StraightLine& line)
-{
-	return in;
-}
-
 std::ofstream& operator<<(std::ofstream& out, StraightLine& line)
 {
 	out << "<circle x1=\"" << line.points.getX() << "\" y1=\"" << line.secPoint.getY() << "\" x2=\"" << line.secPoint.getY()
