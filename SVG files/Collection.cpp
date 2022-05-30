@@ -1,4 +1,10 @@
 #include "Collection.h"
+#include <iostream>
+#include <typeinfo>
+Collection::Collection()
+{
+	
+}
 
 void Collection::print()
 {
@@ -6,6 +12,12 @@ void Collection::print()
 	for (Figure* fig : figures) {
 		std::cout << count << ". " << fig << std::endl;;
 	}
+}
+
+void Collection::create()
+{
+
+	//figures.push_back(new Circle(3,4,5,"  "));
 }
 
 void Collection::erase(size_t index)
@@ -25,4 +37,18 @@ void Collection::erase(size_t index)
 	std::cout << "(" << index << ")" << std::endl;
 
 	figures.erase(figures.begin() + index);
+}
+
+void Collection::translate(size_t index)
+{
+}
+
+void Collection::within()
+{
+
+}
+
+bool Collection::isEmpty()
+{
+	return figures.empty();
 }

@@ -2,6 +2,7 @@
 #include "Circle.h"
 #include "StraightLine.h"
 #include "Rectangle.h"
+#include "Figure.h"
 #include <vector>
 
 class Collection
