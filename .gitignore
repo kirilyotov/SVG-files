@@ -14,3 +14,6 @@
 *.vcxproj.filters
 SVG files/SVG files.vcxproj.user
 
+/x64/Debug
+/SVG files/x64/Debug
+*.exe
