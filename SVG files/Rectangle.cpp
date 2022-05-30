@@ -14,14 +14,9 @@ std::ostream& operator<<(std::ostream& out, const Rectangle& rectangle)
 	return out;
 }
 
-std::ifstream& operator>>(std::ifstream& in, Rectangle& rectangle)
-{
-	return in;
-}
-
 std::ofstream& operator<<(std::ofstream& out, Rectangle& rectangle)
 {
-	out << "<rect x=\"" << rectangle.x << "\" y=\"" << rectangle.y << "\" width=\"" << rectangle.width
+	out << "<rect x=\"" << rectangle.points.getX() << "\" y=\"" << rectangle.points.getY() << "\" width=\"" << rectangle.width
 		<< "\" height=\"" << rectangle.height << "\" r=\" fill=\"" << rectangle.fill;
 
 	if (rectangle.strokeWidth > 0 || rectangle.stroke != "none")
