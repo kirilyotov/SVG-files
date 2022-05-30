@@ -14,12 +14,6 @@ std::ostream& operator<<(std::ostream& out, const Circle& circle)
 }
 
 
-
-std::ifstream& operator>>(std::ifstream& in, Circle& circle)
-{
-	return in;
-}
-
 std::ofstream& operator<<(std::ofstream& out, Circle& circle)
 {
 	out << "<circle cx=\"" << circle.points.getX() << "\" cy=\"" << circle.points.getY() << "\" r=\"" << circle.r
