@@ -11,6 +11,6 @@
 
 
 /.vs/SVG files
-/SVG files/SVG files.vcxproj.user
-SVG files/SVG files.vcxproj.filters
-SVG files/SVG files.vcxproj
+*.vcxproj.filters
+SVG files/SVG files.vcxproj.user
+
