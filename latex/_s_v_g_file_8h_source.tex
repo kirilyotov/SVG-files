@@ -1,0 +1,38 @@
+\hypertarget{_s_v_g_file_8h_source}{}\doxysection{SVGFile.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Collection.h"{}}}
+\DoxyCodeLine{5 \textcolor{keyword}{class }\mbox{\hyperlink{class_s_v_g_file}{SVGFile}} \textcolor{comment}{//Singleton class}}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7 \textcolor{keyword}{private}:}
+\DoxyCodeLine{8     \textcolor{comment}{//Static member for header of svg file}}
+\DoxyCodeLine{9     \textcolor{keyword}{static} \textcolor{keyword}{const}  std::string header;}
+\DoxyCodeLine{10     \textcolor{comment}{//Static member for open tag of svg file}}
+\DoxyCodeLine{11     \textcolor{keyword}{static} \textcolor{keyword}{const}  std::string openTag;}
+\DoxyCodeLine{12     \textcolor{comment}{//Static member for close tag of svg file}}
+\DoxyCodeLine{13     \textcolor{keyword}{static} \textcolor{keyword}{const}  std::string closeTag;}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15     \textcolor{comment}{//static string for file directory}}
+\DoxyCodeLine{16     \textcolor{keyword}{static} std::string fileDirectory;}
+\DoxyCodeLine{17     \textcolor{comment}{//True if file exists}}
+\DoxyCodeLine{18     \textcolor{keywordtype}{bool} exist(\textcolor{keyword}{const} std::string\& file);}
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \mbox{\hyperlink{class_s_v_g_file}{SVGFile}}();}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_s_v_g_file}{SVGFile}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_s_v_g_file}{SVGFile}}\& other) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_s_v_g_file}{SVGFile}}\& operator= (\textcolor{keyword}{const} \mbox{\hyperlink{class_s_v_g_file}{SVGFile}}\& other) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{24     \textcolor{comment}{//Open file}}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} open(std::string path, \mbox{\hyperlink{class_collection}{Collection}}* col);}
+\DoxyCodeLine{26     \textcolor{comment}{//Save file}}
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} save(\mbox{\hyperlink{class_collection}{Collection}}* col);}
+\DoxyCodeLine{28     \textcolor{comment}{//Close file}}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} close(\mbox{\hyperlink{class_collection}{Collection}}* col);}
+\DoxyCodeLine{30     \textcolor{comment}{//Save as file}}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} saveAs(\textcolor{keyword}{const} std::string\& directry, \mbox{\hyperlink{class_collection}{Collection}}* col);}
+\DoxyCodeLine{32 \};}
+\DoxyCodeLine{33 }
+
+\end{DoxyCode}

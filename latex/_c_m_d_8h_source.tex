@@ -1,0 +1,70 @@
+\hypertarget{_c_m_d_8h_source}{}\doxysection{CMD.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Collection.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}CommandLineArguments.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}SVGFile.h"{}}}
+\DoxyCodeLine{6 \textcolor{comment}{//Singleton class}}
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_m_d}{CMD}}}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9 \textcolor{keyword}{private}:}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_c_m_d}{CMD}}();}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12     \textcolor{comment}{//Collection of figures}}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_collection}{Collection}}* collection;}
+\DoxyCodeLine{14     \textcolor{comment}{//Integrated commands}}
+\DoxyCodeLine{15     \textcolor{keyword}{static} \textcolor{keyword}{const} std::vector<std::string> integratedCommands;}
+\DoxyCodeLine{16     \textcolor{comment}{//parameters }}
+\DoxyCodeLine{17     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} TWO\_PARAMS = 2;}
+\DoxyCodeLine{18     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} ONE\_PARAM = 1;}
+\DoxyCodeLine{19     }
+\DoxyCodeLine{20     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} exitFromProgram;  }
+\DoxyCodeLine{21     \textcolor{comment}{//Number of integrated command}}
+\DoxyCodeLine{22     \textcolor{keywordtype}{int} commandNumber( \mbox{\hyperlink{class_command_line_arguments}{CommandLineArguments}}\& lines) \textcolor{keyword}{const};}
+\DoxyCodeLine{23     \textcolor{comment}{//Run command by number}}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} runCommand(\mbox{\hyperlink{class_command_line_arguments}{CommandLineArguments}}\& lines) ;}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{comment}{//svg file}}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_s_v_g_file}{SVGFile}} svgFile;}
+\DoxyCodeLine{28     \textcolor{comment}{//Open file}}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} open(\textcolor{keyword}{const} std::string\& file); \textcolor{comment}{//0}}
+\DoxyCodeLine{30     \textcolor{comment}{//Close file}}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} close();\textcolor{comment}{//1}}
+\DoxyCodeLine{32     \textcolor{comment}{//Save file}}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} save();\textcolor{comment}{//2}}
+\DoxyCodeLine{34     \textcolor{comment}{//Save as file}}
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} saveAs(std::string directory);\textcolor{comment}{//3}}
+\DoxyCodeLine{36     \textcolor{comment}{//help info user output}}
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} help();\textcolor{comment}{//4}}
+\DoxyCodeLine{38     \textcolor{comment}{//Print data}}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} print();\textcolor{comment}{//5}}
+\DoxyCodeLine{40     \textcolor{comment}{//Exit from program}}
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} exit();\textcolor{comment}{//6}}
+\DoxyCodeLine{42     \textcolor{comment}{//Create figure}}
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} create();\textcolor{comment}{//7}}
+\DoxyCodeLine{44     \textcolor{comment}{//Delete figure by index}}
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} erase(\textcolor{keywordtype}{size\_t} index);\textcolor{comment}{//8}}
+\DoxyCodeLine{46     \textcolor{comment}{//Translate figure}}
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} translate(\textcolor{keywordtype}{size\_t} index);\textcolor{comment}{//9}}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \textcolor{keyword}{public}:}
+\DoxyCodeLine{54     \textcolor{comment}{//Deleting copy constructor}}
+\DoxyCodeLine{55     \mbox{\hyperlink{class_c_m_d}{CMD}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_c_m_d}{CMD}}\& other) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{56     \textcolor{comment}{//Deleting operator=}}
+\DoxyCodeLine{57     \mbox{\hyperlink{class_c_m_d}{CMD}}\& operator= (\textcolor{keyword}{const} \mbox{\hyperlink{class_c_m_d}{CMD}}\& other) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{58     \textcolor{comment}{//Start point of singleton class}}
+\DoxyCodeLine{59     \textcolor{keyword}{static} \mbox{\hyperlink{class_c_m_d}{CMD}}\& program();}
+\DoxyCodeLine{60     \textcolor{comment}{//Run program}}
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} run();}
+\DoxyCodeLine{62     }
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \};}
+\DoxyCodeLine{65 }
+
+\end{DoxyCode}

@@ -1,0 +1,35 @@
+\hypertarget{_command_line_arguments_8h_source}{}\doxysection{Command\+Line\+Arguments.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{keyword}{class }\mbox{\hyperlink{class_command_line_arguments}{CommandLineArguments}}}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7 \textcolor{keyword}{private}:}
+\DoxyCodeLine{8     \textcolor{comment}{//Vector to store data}}
+\DoxyCodeLine{9     std::vector <std::string> lineArguments;}
+\DoxyCodeLine{10     \textcolor{comment}{//Split line by defined char}}
+\DoxyCodeLine{11     \textcolor{keywordtype}{void} splitLine(std::string\& line);}
+\DoxyCodeLine{12     \textcolor{comment}{//Split line by defined char}}
+\DoxyCodeLine{13     \textcolor{keywordtype}{bool} splitBy(\textcolor{keyword}{const} \textcolor{keywordtype}{char}\& ch)\textcolor{keyword}{const};}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15     \textcolor{keywordtype}{bool} isQuote(\textcolor{keyword}{const} \textcolor{keywordtype}{char}\& ch) \textcolor{keyword}{const};}
+\DoxyCodeLine{16     \textcolor{comment}{//Not Allowed found}}
+\DoxyCodeLine{17     \textcolor{keywordtype}{bool}  isNotAllowedSymbol(\textcolor{keyword}{const} \textcolor{keywordtype}{char}\& ch) \textcolor{keyword}{const};}
+\DoxyCodeLine{18 \textcolor{keyword}{public}:}
+\DoxyCodeLine{19     \textcolor{comment}{//Constructor with parameters}}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_command_line_arguments}{CommandLineArguments}}(std::string argument);}
+\DoxyCodeLine{21     \textcolor{comment}{//Size of vector}}
+\DoxyCodeLine{22     std::size\_t size() \textcolor{keyword}{const};}
+\DoxyCodeLine{23     \textcolor{comment}{//Data in given index}}
+\DoxyCodeLine{24     std::string\& operator[] (std::size\_t index);}
+\DoxyCodeLine{25     \textcolor{comment}{//LineArgumetns vector is empty}}
+\DoxyCodeLine{26     \textcolor{keywordtype}{bool} isEmpty() \textcolor{keyword}{const};}
+\DoxyCodeLine{27     \textcolor{comment}{//Line to lower case}}
+\DoxyCodeLine{28     \textcolor{keyword}{const} std::string\& toLowerCase(std::string\& line) \textcolor{keyword}{const};}
+\DoxyCodeLine{29 \};}
+\DoxyCodeLine{30 }
+
+\end{DoxyCode}
