@@ -139,7 +139,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="SVG files.cpp" />
+    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="CMD.cpp" />
+    <ClCompile Include="Collection.cpp" />
+    <ClCompile Include="CommandLineArguments.cpp" />
+    <ClCompile Include="Figure.cpp" />
+    <ClCompile Include="Point2D.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="StraightLine.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SVGFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="Collection.h" />
+    <ClInclude Include="CommandLineArguments.h" />
+    <ClInclude Include="CMD.h" />
+    <ClInclude Include="Figure.h" />
+    <ClInclude Include="Point2D.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="StraightLine.h" />
+    <ClInclude Include="SVGFile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
